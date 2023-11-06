@@ -1,7 +1,10 @@
 // Import necessary modules
 const express = require('express');
 const router = express.Router();
-const productsController = require('D:\Work\GitHub Projects\Store Project\controllers\ProductsController.js');
+//TASK_1: RESEARCH ABOUT ROUTES //  https://www.coreycleary.me/escaping-relative-path-hell
+//const productsController = require('D:\Work\GitHub Projects\Store Project\controllers\ProductsController.js');
+//productsController was wrong because you should acces to ProductsController but you needed use ".." to go back one folder anter that select "controllers" folder and "ProductsController" file
+const productsController = require('../controllers/ProductsController');
 
 // Define a route to get all products
 router.get('/products', productsController.getAllProducts);

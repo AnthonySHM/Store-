@@ -4,10 +4,10 @@ const express = require('express');
 
 const dbConfig = {
     host: 'localhost',
-    user: 'your_user', // Replace with your MySQL username
-    password: 'your_password', // Replace with your MySQL password
-    database: 'your_database_name', // Replace with your database name
+    user: 'root', // Replace with your MySQL username
+    password: 'root',// Replace with your MySQL password
+    database: 'store_db', // Replace with your database name
 };
 
-const pool = mysql. createConnection(dbConfig);
+const pool = mysql.createConnection(dbConfig); //THERE HAD A SPACE  mysql. createConnection
 module.exports = pool;
